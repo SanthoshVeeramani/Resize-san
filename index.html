@@ -3,64 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resize-san - Free online image resizer, converter, and compressor. 100% private, all processing happens in your browser. No uploads to servers.">
-    <meta name="keywords" content="image resizer, image converter, image compressor, resize image, convert jpg to png, compress image, free image tools">
+    <title>Resize-san - Free Image Resizer, Converter & Compressor Online</title>
+    <meta name="description" content="Free browser-based image resizer, converter, and compressor. Resize images by width, height, or percentage. Convert between JPG, PNG, and WEBP formats. 100% private - images never leave your device.">
+    <meta name="keywords" content="image resizer, image converter, image compressor, resize image, convert jpg to png, compress image, free image tools, webp converter, png to jpg">
     <meta name="author" content="Resize-san">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://resize-san.github.io/">
+    <meta name="theme-color" content="#6366f1">
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://resize-san.netlify.app/">
+
+    <!-- Google Search Console Verification - REPLACE WITH YOUR VERIFICATION CODE -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE"> -->
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Resize-san - Free Image Resizer, Converter & Compressor">
     <meta property="og:description" content="Resize, Convert and Optimize Images Instantly — 100% Private. Free online image tools.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://resize-san.github.io/">
-    <meta property="og:image" content="assets/og-image.png">
+    <meta property="og:url" content="https://resize-san.netlify.app/">
+    <meta property="og:site_name" content="Resize-san">
+    <meta property="og:locale" content="en_US">
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Resize-san - Free Image Resizer, Converter & Compressor">
     <meta name="twitter:description" content="Resize, Convert and Optimize Images Instantly — 100% Private.">
+    <meta name="twitter:creator" content="@resize-san">
 
-    <title>Resize-san - Free Image Resizer, Converter & Compressor Online</title>
-
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- Critical CSS -->
+    <style>
+        :root{--bg-primary:#fff;--text-primary:#1a1a2e;--accent-primary:#6366f1}body{margin:0;font-family:Inter,sans-serif}.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.9);backdrop-filter:blur(10px)}@media (prefers-color-scheme:dark){:root{--bg-primary:#0a0a0f;--text-primary:#f1f1f7}}
+    </style>
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Resize-san",
-        "url": "https://resize-san.github.io/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://resize-san.github.io/?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
+    <!-- Structured Data - Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Resize-san",
-        "url": "https://resize-san.github.io/",
-        "logo": "https://resize-san.github.io/assets/logo.png",
-        "description": "Free online image resizer, converter, and compressor tool."
+        "url": "https://resize-san.netlify.app/",
+        "description": "Free online image resizer, converter, and compressor tool.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Resize-san"
+        },
+        "sameAs": []
     }
     </script>
+
+    <!-- Structured Data - WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Resize-san",
+        "url": "https://resize-san.netlify.app/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://resize-san.netlify.app/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- Structured Data - SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Resize-san",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "url": "https://resize-san.netlify.app/",
+        "description": "Free browser-based image resizer, converter, and compressor.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- JSZip for batch downloads -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
 </head>
 <body>
-    <header class="header" id="header">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" id="header" role="banner">
         <div class="header-container">
-            <a href="/" class="logo">
-                <span class="logo-icon">⚡</span>
+            <a href="/" class="logo" aria-label="Resize-san Home">
+                <span class="logo-icon" aria-hidden="true">⚡</span>
                 <span class="logo-text">Resize-san</span>
             </a>
-            <nav class="nav" id="nav">
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="#tools" class="nav-link">Tools</a></li>
                     <li><a href="#social-presets" class="nav-link">Social Media</a></li>
@@ -69,10 +118,10 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <span class="theme-icon">🌙</span>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" type="button">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
                 </button>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false" type="button">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -81,160 +130,185 @@
         </div>
     </header>
 
-    <main>
-        <section class="hero" id="hero">
-            <div class="hero-bg">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero-bg" aria-hidden="true">
                 <div class="hero-gradient"></div>
                 <div class="hero-pattern"></div>
             </div>
             <div class="hero-content">
-                <h1 class="hero-title">
-                    Resize, Convert &amp; Optimize<br>
+                <h1 id="hero-title" class="hero-title">
+                    Resize, Convert <span aria-hidden="true">&amp;</span> Optimize<br>
                     <span class="gradient-text">Images Instantly</span>
                 </h1>
                 <p class="hero-subtitle">100% Private — All processing happens in your browser. No uploads to servers.</p>
-                <div class="hero-stats">
-                    <div class="stat-item">
+                <div class="hero-stats" role="list" aria-label="Service statistics">
+                    <div class="stat-item" role="listitem">
                         <span class="stat-number">50MB</span>
                         <span class="stat-label">Max File Size</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" role="listitem">
                         <span class="stat-number">3</span>
                         <span class="stat-label">Image Formats</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" role="listitem">
                         <span class="stat-number">8+</span>
                         <span class="stat-label">Social Presets</span>
                     </div>
                 </div>
-                <div class="trust-signals">
-                    <div class="trust-item">✓ Images never leave your device</div>
-                    <div class="trust-item">✓ Completely free to use</div>
-                    <div class="trust-item">✓ No registration required</div>
+                <div class="trust-signals" role="list" aria-label="Trust signals">
+                    <div class="trust-item" role="listitem">✓ Images never leave your device</div>
+                    <div class="trust-item" role="listitem">✓ Completely free to use</div>
+                    <div class="trust-item" role="listitem">✓ No registration required</div>
+                    <div class="trust-item" role="listitem">✓ 100% browser-based processing</div>
                 </div>
             </div>
         </section>
 
-        <!-- Ad: Header Banner -->
-        <div class="ad-container ad-header">
-            <!-- Google AdSense Header Banner -->
-            <ins class="adsbygoogle ad-banner" data-ad-client="ca-pub-XXXXXXXXX" data-ad-slot="XXXXXXXXX" data-ad-format="auto"></ins>
-        </div>
+        <!-- Ad: Header Banner Placeholder -->
+        <aside class="ad-container ad-header" aria-label="Advertisement">
+            <!--
+            =====================================================
+            GOOGLE ADSENSE PLACEHOLDER - HEADER BANNER
+            =====================================================
+            To enable ads:
+            1. Sign up at https://www.google.com/adsense
+            2. Get your publisher ID (ca-pub-XXXXXXXXX)
+            3. Create ad units in AdSense dashboard
+            4. Replace the placeholder below with your actual ad code
 
-        <section class="tools-section" id="tools">
+            Example AdSense code:
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            =====================================================
+            -->
+            <div class="ad-placeholder">Advertisement</div>
+        </aside>
+
+        <!-- Tools Section -->
+        <section class="tools-section" id="tools" aria-labelledby="tools-heading">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">Image Tools</h2>
+                    <h2 id="tools-heading" class="section-title">Image Tools</h2>
                     <p class="section-subtitle">Professional image tools, 100% free and private</p>
                 </div>
 
-                <div class="tools-tabs">
-                    <button class="tab-btn active" data-tab="resizer">Image Resizer</button>
-                    <button class="tab-btn" data-tab="converter">Format Converter</button>
-                    <button class="tab-btn" data-tab="compressor">Image Compressor</button>
+                <div class="tools-tabs" role="tablist" aria-label="Tool categories">
+                    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="resizer-panel" id="tab-resizer" type="button">Image Resizer</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="converter-panel" id="tab-converter" type="button">Format Converter</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="compressor-panel" id="tab-compressor" type="button">Image Compressor</button>
                 </div>
 
                 <!-- Image Resizer Tool -->
-                <div class="tool-panel active" id="resizer-panel">
-                    <div class="upload-area" id="resizer-dropzone">
-                        <div class="upload-icon">📁</div>
-                        <h3>Drag &amp; drop images here</h3>
+                <div class="tool-panel active" id="resizer-panel" role="tabpanel" aria-labelledby="tab-resizer">
+                    <div class="upload-area" id="resizer-dropzone" role="button" tabindex="0" aria-label="Upload images for resizing. Drop files here or click to browse">
+                        <div class="upload-icon" aria-hidden="true">📁</div>
+                        <h3>Drag <span aria-hidden="true">&amp;</span> drop images here</h3>
                         <p>or click to browse</p>
-                        <input type="file" id="resizer-input" accept="image/*" multiple hidden>
+                        <input type="file" id="resizer-input" accept="image/*" multiple hidden aria-label="Select images to resize">
                     </div>
 
-                    <div class="resize-options">
+                    <div class="resize-options" role="group" aria-label="Resize options">
                         <div class="option-group">
-                            <label>Resize Mode</label>
-                            <div class="btn-group">
-                                <button class="option-btn active" data-mode="width">By Width</button>
-                                <button class="option-btn" data-mode="height">By Height</button>
-                                <button class="option-btn" data-mode="percentage">By %</button>
+                            <label id="resize-mode-label">Resize Mode</label>
+                            <div class="btn-group" role="radiogroup" aria-labelledby="resize-mode-label">
+                                <button class="option-btn active" data-mode="width" role="radio" aria-checked="true" type="button">By Width</button>
+                                <button class="option-btn" data-mode="height" role="radio" aria-checked="false" type="button">By Height</button>
+                                <button class="option-btn" data-mode="percentage" role="radio" aria-checked="false" type="button">By %</button>
                             </div>
                         </div>
                         <div class="option-group dimension-inputs">
                             <div class="input-wrapper">
-                                <label>Width</label>
-                                <input type="number" id="resize-width" value="800" min="1">
-                                <span class="unit">px</span>
+                                <label for="resize-width">Width</label>
+                                <input type="number" id="resize-width" value="800" min="1" aria-describedby="width-unit">
+                                <span id="width-unit" class="unit">px</span>
                             </div>
                             <div class="input-wrapper">
-                                <label>Height</label>
-                                <input type="number" id="resize-height" value="600" min="1">
-                                <span class="unit">px</span>
+                                <label for="resize-height">Height</label>
+                                <input type="number" id="resize-height" value="600" min="1" aria-describedby="height-unit">
+                                <span id="height-unit" class="unit">px</span>
                             </div>
                             <div class="input-wrapper percentage-input hidden">
-                                <label>Percentage</label>
-                                <input type="number" id="resize-percent" value="50" min="1" max="200">
-                                <span class="unit">%</span>
+                                <label for="resize-percent">Percentage</label>
+                                <input type="number" id="resize-percent" value="50" min="1" max="200" aria-describedby="percent-unit">
+                                <span id="percent-unit" class="unit">%</span>
                             </div>
                         </div>
                         <div class="option-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" id="lock-aspect" checked>
-                                <span class="checkmark"></span>
+                                <span class="checkmark" aria-hidden="true"></span>
                                 Lock aspect ratio
                             </label>
                         </div>
                         <div class="option-group">
-                            <label>Quality: <span id="quality-value">90%</span></label>
-                            <input type="range" id="resize-quality" min="10" max="100" value="90">
+                            <label for="resize-quality">Quality: <span id="quality-value">90%</span></label>
+                            <input type="range" id="resize-quality" min="10" max="100" value="90" aria-valuemin="10" aria-valuemax="100" aria-valuenow="90">
                         </div>
                     </div>
 
-                    <div class="preview-section" id="resizer-preview"></div>
+                    <div class="preview-section" id="resizer-preview" aria-live="polite"></div>
 
                     <div class="action-buttons">
-                        <button class="btn btn-primary" id="resize-download" disabled>Download</button>
-                        <button class="btn btn-secondary" id="resize-zip" disabled>Download ZIP</button>
+                        <button class="btn btn-primary" id="resize-download" disabled type="button">Download</button>
+                        <button class="btn btn-secondary" id="resize-zip" disabled type="button">Download ZIP</button>
                     </div>
                 </div>
 
                 <!-- Image Converter Tool -->
-                <div class="tool-panel" id="converter-panel">
-                    <div class="upload-area" id="converter-dropzone">
-                        <div class="upload-icon">🔄</div>
-                        <h3>Drag &amp; drop images here</h3>
+                <div class="tool-panel" id="converter-panel" role="tabpanel" aria-labelledby="tab-converter">
+                    <div class="upload-area" id="converter-dropzone" role="button" tabindex="0" aria-label="Upload images for conversion. Drop files here or click to browse">
+                        <div class="upload-icon" aria-hidden="true">🔄</div>
+                        <h3>Drag <span aria-hidden="true">&amp;</span> drop images here</h3>
                         <p>or click to browse</p>
-                        <input type="file" id="converter-input" accept="image/*" multiple hidden>
+                        <input type="file" id="converter-input" accept="image/*" multiple hidden aria-label="Select images to convert">
                     </div>
 
-                    <div class="convert-options">
+                    <div class="convert-options" role="group" aria-label="Convert options">
                         <div class="option-group">
-                            <label>Convert To</label>
-                            <select id="convert-format">
+                            <label for="convert-format">Convert To</label>
+                            <select id="convert-format" aria-describedby="format-help">
                                 <option value="png">PNG</option>
                                 <option value="jpeg">JPG</option>
                                 <option value="webp">WEBP</option>
                             </select>
+                            <span id="format-help" class="help-text">Choose output format</span>
                         </div>
                         <div class="option-group">
-                            <label>Quality: <span id="convert-quality-value">90%</span></label>
-                            <input type="range" id="convert-quality" min="10" max="100" value="90">
+                            <label for="convert-quality">Quality: <span id="convert-quality-value">90%</span></label>
+                            <input type="range" id="convert-quality" min="10" max="100" value="90" aria-valuemin="10" aria-valuemax="100" aria-valuenow="90">
                         </div>
                     </div>
 
-                    <div class="preview-section" id="converter-preview"></div>
+                    <div class="preview-section" id="converter-preview" aria-live="polite"></div>
 
                     <div class="action-buttons">
-                        <button class="btn btn-primary" id="convert-download" disabled>Download</button>
-                        <button class="btn btn-secondary" id="convert-zip" disabled>Download ZIP</button>
+                        <button class="btn btn-primary" id="convert-download" disabled type="button">Download</button>
+                        <button class="btn btn-secondary" id="convert-zip" disabled type="button">Download ZIP</button>
                     </div>
                 </div>
 
                 <!-- Image Compressor Tool -->
-                <div class="tool-panel" id="compressor-panel">
-                    <div class="upload-area" id="compressor-dropzone">
-                        <div class="upload-icon">🗜️</div>
-                        <h3>Drag &amp; drop images here</h3>
+                <div class="tool-panel" id="compressor-panel" role="tabpanel" aria-labelledby="tab-compressor">
+                    <div class="upload-area" id="compressor-dropzone" role="button" tabindex="0" aria-label="Upload images for compression. Drop files here or click to browse">
+                        <div class="upload-icon" aria-hidden="true">🗜️</div>
+                        <h3>Drag <span aria-hidden="true">&amp;</span> drop images here</h3>
                         <p>or click to browse</p>
-                        <input type="file" id="compressor-input" accept="image/*" multiple hidden>
+                        <input type="file" id="compressor-input" accept="image/*" multiple hidden aria-label="Select images to compress">
                     </div>
 
-                    <div class="compress-options">
+                    <div class="compress-options" role="group" aria-label="Compression options">
                         <div class="option-group">
-                            <label>Compression Level: <span id="compress-level-value">70%</span></label>
-                            <input type="range" id="compress-level" min="10" max="100" value="70">
+                            <label for="compress-level">Compression Level: <span id="compress-level-value">70%</span></label>
+                            <input type="range" id="compress-level" min="10" max="100" value="70" aria-valuemin="10" aria-valuemax="100" aria-valuenow="70">
                             <div class="compression-labels">
                                 <span>Smaller</span>
                                 <span>Balanced</span>
@@ -243,122 +317,124 @@
                         </div>
                     </div>
 
-                    <div class="preview-section" id="compressor-preview"></div>
+                    <div class="preview-section" id="compressor-preview" aria-live="polite"></div>
 
                     <div class="action-buttons">
-                        <button class="btn btn-primary" id="compress-download" disabled>Download</button>
-                        <button class="btn btn-secondary" id="compress-zip" disabled>Download ZIP</button>
+                        <button class="btn btn-primary" id="compress-download" disabled type="button">Download</button>
+                        <button class="btn btn-secondary" id="compress-zip" disabled type="button">Download ZIP</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Ad: In-Content -->
-        <div class="ad-container ad-in-content">
-            <!-- Google AdSense In-Content Ad -->
-            <ins class="adsbygoogle" data-ad-client="ca-pub-XXXXXXXXX" data-ad-slot="XXXXXXXXX" data-ad-format="rectangle"></ins>
-        </div>
+        <!-- Ad: In-Content Placeholder -->
+        <aside class="ad-container ad-in-content" aria-label="Advertisement">
+            <div class="ad-placeholder">Advertisement</div>
+        </aside>
 
-        <section class="social-presets" id="social-presets">
+        <!-- Social Media Presets Section -->
+        <section class="social-presets" id="social-presets" aria-labelledby="presets-heading">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">Social Media Image Sizes</h2>
+                    <h2 id="presets-heading" class="section-title">Social Media Image Sizes</h2>
                     <p class="section-subtitle">One-click presets for all major platforms</p>
                 </div>
 
                 <div class="presets-grid">
-                    <div class="preset-category">
+                    <article class="preset-category">
                         <h3>Instagram</h3>
                         <div class="preset-buttons">
-                            <button class="preset-btn" data-width="1080" data-height="1080">Square Post (1080×1080)</button>
-                            <button class="preset-btn" data-width="1080" data-height="1350">Portrait (1080×1350)</button>
-                            <button class="preset-btn" data-width="1080" data-height="1920">Story (1080×1920)</button>
-                            <button class="preset-btn" data-width="1080" data-height="1920">Reel Cover (1080×1920)</button>
+                            <button class="preset-btn" data-width="1080" data-height="1080" type="button">Square Post (1080×1080)</button>
+                            <button class="preset-btn" data-width="1080" data-height="1350" type="button">Portrait (1080×1350)</button>
+                            <button class="preset-btn" data-width="1080" data-height="1920" type="button">Story (1080×1920)</button>
+                            <button class="preset-btn" data-width="1080" data-height="1920" type="button">Reel Cover (1080×1920)</button>
                         </div>
-                    </div>
-                    <div class="preset-category">
+                    </article>
+                    <article class="preset-category">
                         <h3>YouTube</h3>
                         <div class="preset-buttons">
-                            <button class="preset-btn" data-width="1280" data-height="720">Thumbnail (1280×720)</button>
-                            <button class="preset-btn" data-width="2560" data-height="1440">Banner (2560×1440)</button>
+                            <button class="preset-btn" data-width="1280" data-height="720" type="button">Thumbnail (1280×720)</button>
+                            <button class="preset-btn" data-width="2560" data-height="1440" type="button">Banner (2560×1440)</button>
                         </div>
-                    </div>
-                    <div class="preset-category">
+                    </article>
+                    <article class="preset-category">
                         <h3>Facebook</h3>
                         <div class="preset-buttons">
-                            <button class="preset-btn" data-width="820" data-height="312">Cover (820×312)</button>
-                            <button class="preset-btn" data-width="1200" data-height="630">Feed Post (1200×630)</button>
+                            <button class="preset-btn" data-width="820" data-height="312" type="button">Cover (820×312)</button>
+                            <button class="preset-btn" data-width="1200" data-height="630" type="button">Feed Post (1200×630)</button>
                         </div>
-                    </div>
-                    <div class="preset-category">
-                        <h3>Twitter/X</h3>
+                    </article>
+                    <article class="preset-category">
+                        <h3>Twitter<span aria-hidden="true">/</span>X</h3>
                         <div class="preset-buttons">
-                            <button class="preset-btn" data-width="1500" data-height="500">Header (1500×500)</button>
-                            <button class="preset-btn" data-width="1200" data-height="675">Post (1200×675)</button>
+                            <button class="preset-btn" data-width="1500" data-height="500" type="button">Header (1500×500)</button>
+                            <button class="preset-btn" data-width="1200" data-height="675" type="button">Post (1200×675)</button>
                         </div>
-                    </div>
-                    <div class="preset-category">
+                    </article>
+                    <article class="preset-category">
                         <h3>LinkedIn</h3>
                         <div class="preset-buttons">
-                            <button class="preset-btn" data-width="1584" data-height="396">Banner (1584×396)</button>
-                            <button class="preset-btn" data-width="1200" data-height="627">Post (1200×627)</button>
+                            <button class="preset-btn" data-width="1584" data-height="396" type="button">Banner (1584×396)</button>
+                            <button class="preset-btn" data-width="1200" data-height="627" type="button">Post (1200×627)</button>
                         </div>
-                    </div>
-                    <div class="preset-category">
+                    </article>
+                    <article class="preset-category">
                         <h3>Pinterest</h3>
                         <div class="preset-buttons">
-                            <button class="preset-btn" data-width="1000" data-height="1500">Pin (1000×1500)</button>
+                            <button class="preset-btn" data-width="1000" data-height="1500" type="button">Pin (1000×1500)</button>
                         </div>
-                    </div>
-                    <div class="preset-category">
+                    </article>
+                    <article class="preset-category">
                         <h3>TikTok</h3>
                         <div class="preset-buttons">
-                            <button class="preset-btn" data-width="1080" data-height="1920">Cover (1080×1920)</button>
+                            <button class="preset-btn" data-width="1080" data-height="1920" type="button">Cover (1080×1920)</button>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <div class="preset-action">
                     <p>Select a preset to use with the Image Resizer</p>
-                    <button class="btn btn-primary" id="use-preset-btn">Use with Resizer</button>
+                    <button class="btn btn-primary" id="use-preset-btn" type="button">Use with Resizer</button>
                 </div>
             </div>
         </section>
 
-        <section class="how-it-works" id="how-it-works">
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works" aria-labelledby="howit-heading">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">How It Works</h2>
+                    <h2 id="howit-heading" class="section-title">How It Works</h2>
                     <p class="section-subtitle">Three simple steps to resize, convert, or compress your images</p>
                 </div>
 
                 <div class="steps-grid">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <div class="step-icon">📤</div>
+                    <article class="step-card">
+                        <div class="step-number" aria-hidden="true">1</div>
+                        <div class="step-icon" aria-hidden="true">📤</div>
                         <h3>Upload</h3>
                         <p>Drag and drop your images or click to browse and select files</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <div class="step-icon">⚙️</div>
+                    </article>
+                    <article class="step-card">
+                        <div class="step-number" aria-hidden="true">2</div>
+                        <div class="step-icon" aria-hidden="true">⚙️</div>
                         <h3>Adjust</h3>
                         <p>Choose dimensions, format, or compression level</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <div class="step-icon">💾</div>
+                    </article>
+                    <article class="step-card">
+                        <div class="step-number" aria-hidden="true">3</div>
+                        <div class="step-icon" aria-hidden="true">💾</div>
                         <h3>Download</h3>
                         <p>Save your processed images instantly</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="faq-section" id="faq-section">
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq-section" aria-labelledby="faq-heading">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
                     <p class="section-subtitle">Get answers to common questions about our image tools</p>
                 </div>
 
@@ -366,181 +442,152 @@
                     <details class="faq-item">
                         <summary>Is this image resizer completely free to use?</summary>
                         <div class="faq-answer">
-                            <p>Yes! Resize-san is completely free to use. There are no hidden fees, no premium tiers, and no registration required. You can resize, convert, and compress as many images as you need, anytime.</p>
+                            <p>Yes! Resize-san is completely free to use. There are no hidden fees, no premium tiers, and no registration required.</p>
                         </div>
                     </details>
                     <details class="faq-item">
                         <summary>Are my images uploaded to a server?</summary>
                         <div class="faq-answer">
-                            <p>No! All image processing happens 100% in your browser using advanced JavaScript APIs. Your images never leave your device. This makes Resize-san completely private and secure.</p>
+                            <p>No! All image processing happens 100% in your browser. Your images never leave your device.</p>
                         </div>
                     </details>
                     <details class="faq-item">
                         <summary>How do I resize multiple images at once?</summary>
                         <div class="faq-answer">
-                            <p>Simply drag and drop multiple images into the upload area, or click to select multiple files. All selected images will be processed with the same settings. You can download them individually or as a ZIP file.</p>
+                            <p>Drag and drop multiple images or hold Ctrl/Cmd to select multiple files. All will be processed with same settings.</p>
                         </div>
                     </details>
                     <details class="faq-item">
                         <summary>What image formats are supported?</summary>
                         <div class="faq-answer">
-                            <p>We support JPG, PNG, and WEBP formats. You can convert between any of these formats: JPG to PNG, PNG to JPG, JPG to WEBP, PNG to WEBP, WEBP to JPG, and WEBP to PNG.</p>
+                            <p>We support JPG, PNG, and WEBP. Convert between any: JPG ↔ PNG ↔ WEBP.</p>
                         </div>
                     </details>
                     <details class="faq-item">
-                        <summary>How do I maintain image quality when resizing?</summary>
+                        <summary>What is the maximum file size?</summary>
                         <div class="faq-answer">
-                            <p>Use the quality slider to set a higher percentage (80-100%). Higher quality means larger file sizes. For web use, 80% is usually a good balance between quality and file size.</p>
+                            <p>You can upload images up to 50MB each. Processing happens in your browser.</p>
                         </div>
                     </details>
                     <details class="faq-item">
-                        <summary>What is the maximum file size I can upload?</summary>
+                        <summary>Does this work on mobile devices?</summary>
                         <div class="faq-answer">
-                            <p>You can upload images up to 50MB each. The processing happens in your browser, so the actual limit depends on your device's available memory.</p>
+                            <p>Yes! Resize-san is fully responsive and works on all devices.</p>
                         </div>
                     </details>
                     <details class="faq-item">
-                        <summary>Does resizing images cause quality loss?</summary>
+                        <summary>Is my data secure?</summary>
                         <div class="faq-answer">
-                            <p>When resizing to smaller dimensions, some quality loss is inevitable. However, our advanced algorithms minimize this loss. Using high quality settings and the lock aspect ratio feature helps maintain the best possible quality.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Can I use Resize-san on mobile devices?</summary>
-                        <div class="faq-answer">
-                            <p>Yes! Resize-san is fully responsive and works on all devices including smartphones and tablets. The entire experience is mobile-friendly with touch-friendly controls.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>What are the best image sizes for social media?</summary>
-                        <div class="faq-answer">
-                            <p>Different platforms have different optimal sizes. Instagram posts are typically 1080×1080, Facebook covers are 820×312, YouTube thumbnails are 1280×720, and Twitter headers are 1500×500. Use our one-click presets for perfect sizing!</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Is my data secure when using Resize-san?</summary>
-                        <div class="faq-answer">
-                            <p>Absolutely! Since all processing happens in your browser, your images are never uploaded anywhere. There's no server storage, no cloud processing, and no data transmission. Your privacy is 100% protected.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>How do I convert PNG to JPG format?</summary>
-                        <div class="faq-answer">
-                            <p>Select the "Format Converter" tab, upload your PNG image(s), choose "JPG" from the format dropdown, adjust quality if needed, and click Download. It's that simple!</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Can I compress images without losing quality?</summary>
-                        <div class="faq-answer">
-                            <p>Our compressor uses smart algorithms to reduce file size while maintaining visual quality. Use the "Balanced" setting for the best ratio. For print, use higher quality; for web, balanced works great.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Do you offer batch processing?</summary>
-                        <div class="faq-answer">
-                            <p>Yes! You can upload multiple images at once and process them all with the same settings. Download them individually or use the "Download ZIP" button to get all processed images at once.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>What browsers are supported?</summary>
-                        <div class="faq-answer">
-                            <p>Resize-san works best in modern browsers: Chrome, Firefox, Safari, Edge, and Opera. We use standard browser APIs for maximum compatibility.</p>
+                            <p>Absolutely! No server storage, no cloud processing. Your privacy is 100% protected.</p>
                         </div>
                     </details>
                     <details class="faq-item">
                         <summary>How do the social media presets work?</summary>
                         <div class="faq-answer">
-                            <p>Simply click any preset button (Instagram, YouTube, Facebook, etc.) and then click "Use with Resizer". This will automatically set the correct dimensions in the Image Resizer tool for you.</p>
+                            <p>Click any preset button, then click "Use with Resizer" to auto-set dimensions.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I batch process images?</summary>
+                        <div class="faq-answer">
+                            <p>Yes! Upload multiple images and download them individually or as a ZIP file.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What browsers are supported?</summary>
+                        <div class="faq-answer">
+                            <p>Chrome, Firefox, Safari, Edge, and Opera. We use standard browser APIs.</p>
                         </div>
                     </details>
                 </div>
 
                 <div class="faq-cta">
-                    <p>More questions? Visit our <a href="faq/">FAQ page</a></p>
+                    <p>More questions? <a href="faq/">Visit our FAQ page</a></p>
                 </div>
             </div>
         </section>
 
-        <!-- Ad: FAQ Section -->
-        <div class="ad-container ad-faq">
-            <!-- Google AdSense FAQ Ad -->
-            <ins class="adsbygoogle" data-ad-client="ca-pub-XXXXXXXXX" data-ad-slot="XXXXXXXXX" data-ad-format="rectangle"></ins>
-        </div>
+        <!-- Ad: FAQ Section Placeholder -->
+        <aside class="ad-container ad-faq" aria-label="Advertisement">
+            <div class="ad-placeholder">Advertisement</div>
+        </aside>
 
-        <section class="newsletter-section" id="newsletter">
+        <!-- Newsletter Section -->
+        <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
             <div class="section-container">
                 <div class="newsletter-card">
-                    <div class="newsletter-icon">📧</div>
-                    <h3>Stay Updated</h3>
+                    <div class="newsletter-icon" aria-hidden="true">📧</div>
+                    <h3 id="newsletter-heading">Stay Updated</h3>
                     <p>Get notified about new features and tools</p>
-                    <form class="newsletter-form" id="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
+                    <form class="newsletter-form" id="newsletter-form" aria-label="Newsletter subscription">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email address">
                         <button type="submit" class="btn btn-primary">Subscribe</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="more-tools" id="more-tools">
+        <!-- More Tools Section -->
+        <section class="more-tools" id="more-tools" aria-labelledby="more-tools-heading">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">More Tools Coming Soon</h2>
+                    <h2 id="more-tools-heading" class="section-title">More Tools Coming Soon</h2>
                     <p class="section-subtitle">We're working on more free image tools for you</p>
                 </div>
 
                 <div class="tools-preview-grid">
-                    <div class="tool-preview-card">
-                        <div class="tool-icon">✂️</div>
+                    <article class="tool-preview-card">
+                        <div class="tool-icon" aria-hidden="true">✂️</div>
                         <h3>Image Crop Tool</h3>
                         <p>Crop images to exact dimensions</p>
                         <span class="coming-soon">Coming Soon</span>
-                    </div>
-                    <div class="tool-preview-card">
-                        <div class="tool-icon">🖼️</div>
+                    </article>
+                    <article class="tool-preview-card">
+                        <div class="tool-icon" aria-hidden="true">🖼️</div>
                         <h3>Background Remover</h3>
                         <p>Remove backgrounds instantly</p>
                         <span class="coming-soon">Coming Soon</span>
-                    </div>
-                    <div class="tool-preview-card">
-                        <div class="tool-icon">📱</div>
+                    </article>
+                    <article class="tool-preview-card">
+                        <div class="tool-icon" aria-hidden="true">📱</div>
                         <h3>QR Code Generator</h3>
                         <p>Create custom QR codes</p>
                         <span class="coming-soon">Coming Soon</span>
-                    </div>
-                    <div class="tool-preview-card">
-                        <div class="tool-icon">😂</div>
+                    </article>
+                    <article class="tool-preview-card">
+                        <div class="tool-icon" aria-hidden="true">😂</div>
                         <h3>Meme Generator</h3>
                         <p>Create memes easily</p>
                         <span class="coming-soon">Coming Soon</span>
-                    </div>
-                    <div class="tool-preview-card">
-                        <div class="tool-icon">📄</div>
+                    </article>
+                    <article class="tool-preview-card">
+                        <div class="tool-icon" aria-hidden="true">📄</div>
                         <h3>PDF to Image</h3>
                         <p>Convert PDF pages to images</p>
                         <span class="coming-soon">Coming Soon</span>
-                    </div>
-                    <div class="tool-preview-card">
-                        <div class="tool-icon">📐</div>
+                    </article>
+                    <article class="tool-preview-card">
+                        <div class="tool-icon" aria-hidden="true">📐</div>
                         <h3>SVG Converter</h3>
                         <p>Convert images to SVG</p>
                         <span class="coming-soon">Coming Soon</span>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="/" class="logo">
-                        <span class="logo-icon">⚡</span>
+                    <a href="/" class="logo" aria-label="Resize-san Home">
+                        <span class="logo-icon" aria-hidden="true">⚡</span>
                         <span class="logo-text">Resize-san</span>
                     </a>
                     <p>Free online image tools. 100% private, all processing happens in your browser.</p>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Tools">
                     <h4>Tools</h4>
                     <ul>
                         <li><a href="#tools">Image Resizer</a></li>
@@ -548,8 +595,8 @@
                         <li><a href="#tools">Image Compressor</a></li>
                         <li><a href="#social-presets">Social Media Presets</a></li>
                     </ul>
-                </div>
-                <div class="footer-links">
+                </nav>
+                <nav class="footer-links" aria-label="Resources">
                     <h4>Resources</h4>
                     <ul>
                         <li><a href="blog/">Blog</a></li>
@@ -557,35 +604,37 @@
                         <li><a href="blog/">Image Sizes Guide</a></li>
                         <li><a href="blog/">Compression Tips</a></li>
                     </ul>
-                </div>
-                <div class="footer-links">
+                </nav>
+                <nav class="footer-links" aria-label="Legal">
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Resize-san. All rights reserved.</p>
             </div>
         </div>
 
-        <!-- Ad: Footer -->
-        <div class="ad-container ad-footer">
-            <!-- Google AdSense Footer Ad -->
-            <ins class="adsbygoogle" data-ad-client="ca-pub-XXXXXXXXX" data-ad-slot="XXXXXXXXX" data-ad-format="auto"></ins>
-        </div>
+        <!-- Ad: Footer Placeholder -->
+        <aside class="ad-container ad-footer" aria-label="Advertisement">
+            <div class="ad-placeholder">Advertisement</div>
+        </aside>
     </footer>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">↑</button>
 
-    <div class="toast-container" id="toastContainer"></div>
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
 
-    <script src="js/resize.js"></script>
-    <script src="js/converter.js"></script>
-    <script src="js/compressor.js"></script>
-    <script src="js/app.js"></script>
+    <!-- JavaScript - Deferred Loading -->
+    <script src="js/resize.js" defer></script>
+    <script src="js/converter.js" defer></script>
+    <script src="js/compressor.js" defer></script>
+    <script src="js/app.js" defer></script>
 </body>
 </html>

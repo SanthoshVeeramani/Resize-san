@@ -3,35 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Frequently Asked Questions about Resize-san - Free online image resizer, converter, and compressor.">
-    <title>FAQ - Resize-san</title>
-    <link rel="canonical" href="https://resize-san.github.io/faq/">
+    <title>FAQ - Resize-san | Frequently Asked Questions</title>
+    <meta name="description" content="Frequently Asked Questions about Resize-san - Free online image resizer, converter, and compressor. Learn about privacy, features, and how to use our tools.">
+    <meta name="keywords" content="image resizer FAQ, image converter FAQ, compress image FAQ, privacy questions, image tools help">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://resize-san.netlify.app/faq/">
+    <meta property="og:title" content="FAQ - Resize-san">
+    <meta property="og:description" content="Frequently Asked Questions about our free image tools">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resize-san.netlify.app/faq/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FAQ - Resize-san">
+    <meta name="twitter:description" content="Frequently Asked Questions about our free image tools">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- FAQPage Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {"@type": "Question", "name": "Is this image resizer completely free to use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! Resize-san is completely free to use. There are no hidden fees, no premium tiers, and no registration required."}},
-            {"@type": "Question", "name": "Are my images uploaded to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No! All image processing happens 100% in your browser using JavaScript. Your images never leave your device."}},
-            {"@type": "Question", "name": "What image formats are supported?", "acceptedAnswer": {"@type": "Answer", "text": "We support JPG, PNG, and WEBP formats. You can convert between any of these formats."}}
+            {"@type": "Question", "name": "Are my images uploaded to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No! All image processing happens 100% in your browser. Your images never leave your device."}},
+            {"@type": "Question", "name": "How do I resize multiple images at once?", "acceptedAnswer": {"@type": "Answer", "text": "Drag and drop multiple images or hold Ctrl/Cmd to select multiple files. All will be processed with the same settings."}},
+            {"@type": "Question", "name": "What image formats are supported?", "acceptedAnswer": {"@type": "Answer", "text": "We support JPG, PNG, and WEBP formats. You can convert between any: JPG to PNG, PNG to JPG, JPG to WEBP, PNG to WEBP, WEBP to JPG, and WEBP to PNG."}},
+            {"@type": "Question", "name": "How do I maintain image quality when resizing?", "acceptedAnswer": {"@type": "Answer", "text": "Use the quality slider to set a higher percentage (80-100%). Higher quality means larger file sizes. For web use, 80% is usually a good balance."}},
+            {"@type": "Question", "name": "What is the maximum file size I can upload?", "acceptedAnswer": {"@type": "Answer", "text": "You can upload images up to 50MB each. The processing happens in your browser, so the actual limit depends on your device's available memory."}},
+            {"@type": "Question", "name": "Does resizing images cause quality loss?", "acceptedAnswer": {"@type": "Answer", "text": "When resizing to smaller dimensions, some quality loss is inevitable. However, our advanced algorithms minimize this loss. Using high quality settings helps."}},
+            {"@type": "Question", "name": "Can I use Resize-san on mobile devices?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! Resize-san is fully responsive and works on all devices including smartphones and tablets."}},
+            {"@type": "Question", "name": "What are the best image sizes for social media?", "acceptedAnswer": {"@type": "Answer", "text": "Different platforms have different optimal sizes. Instagram posts are typically 1080x1080, Facebook covers are 820x312, YouTube thumbnails are 1280x720. Use our one-click presets!"}},
+            {"@type": "Question", "name": "Is my data secure when using Resize-san?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely! Since all processing happens in your browser, your images are never uploaded anywhere. Your privacy is 100% protected."}},
+            {"@type": "Question", "name": "How do I convert PNG to JPG format?", "acceptedAnswer": {"@type": "Answer", "text": "Select the Format Converter tab, upload your PNG image(s), choose JPG from the format dropdown, adjust quality if needed, and click Download."}},
+            {"@type": "Question", "name": "Can I compress images without losing quality?", "acceptedAnswer": {"@type": "Answer", "text": "Our compressor uses smart algorithms to reduce file size while maintaining visual quality. Use the Balanced setting for the best ratio."}},
+            {"@type": "Question", "name": "Do you offer batch processing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! You can upload multiple images at once and process them all with the same settings. Download them individually or use the Download ZIP button."}},
+            {"@type": "Question", "name": "What browsers are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Resize-san works best in modern browsers: Chrome, Firefox, Safari, Edge, and Opera. We use standard browser APIs for maximum compatibility."}},
+            {"@type": "Question", "name": "How do the social media presets work?", "acceptedAnswer": {"@type": "Answer", "text": "Simply click any preset button (Instagram, YouTube, Facebook, etc.) and then click Use with Resizer. This will automatically set the correct dimensions."}}
         ]
     }
     </script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header" role="banner">
         <div class="header-container">
-            <a href="../" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">Resize-san</span></a>
-            <nav class="nav" id="nav">
+            <a href="../" class="logo" aria-label="Resize-san Home"><span class="logo-icon">⚡</span><span class="logo-text">Resize-san</span></a>
+            <nav class="nav" id="nav" role="navigation" aria-label="Main">
                 <ul class="nav-list">
-                    <li><a href="../#tools" class="nav-link">Tools</a></li>
-                    <li><a href="../#social-presets" class="nav-link">Social Media</a></li>
-                    <li><a href="../blog/" class="nav-link">Blog</a></li>
-                    <li><a href="../faq/" class="nav-link">FAQ</a></li>
+                    <li><a href="../#tools">Tools</a></li>
+                    <li><a href="../#social-presets">Social Media</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                    <li><a href="../faq/">FAQ</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,28 +73,29 @@
                 <div class="faq-list">
                     <details class="faq-item"><summary>Is this image resizer completely free to use?</summary><div class="faq-answer"><p>Yes! Resize-san is completely free to use. There are no hidden fees, no premium tiers, and no registration required. You can resize, convert, and compress as many images as you need, anytime.</p></div></details>
                     <details class="faq-item"><summary>Are my images uploaded to a server?</summary><div class="faq-answer"><p>No! All image processing happens 100% in your browser using advanced JavaScript APIs. Your images never leave your device. This makes Resize-san completely private and secure.</p></div></details>
-                    <details class="faq-item"><summary>How do I resize multiple images at once?</summary><div class="faq-answer"><p>Simply drag and drop multiple images into the upload area, or click to select multiple files. All selected images will be processed with the same settings.</p></div></details>
+                    <details class="faq-item"><summary>How do I resize multiple images at once?</summary><div class="faq-answer"><p>Simply drag and drop multiple images into the upload area, or click to select multiple files. All selected images will be processed with the same settings. You can download them individually or as a ZIP file.</p></div></details>
                     <details class="faq-item"><summary>What image formats are supported?</summary><div class="faq-answer"><p>We support JPG, PNG, and WEBP formats. You can convert between any of these formats: JPG to PNG, PNG to JPG, JPG to WEBP, PNG to WEBP, WEBP to JPG, and WEBP to PNG.</p></div></details>
-                    <details class="faq-item"><summary>How do I maintain image quality when resizing?</summary><div class="faq-answer"><p>Use the quality slider to set a higher percentage (80-100%). Higher quality means larger file sizes. For web use, 80% is usually a good balance.</p></div></details>
+                    <details class="faq-item"><summary>How do I maintain image quality when resizing?</summary><div class="faq-answer"><p>Use the quality slider to set a higher percentage (80-100%). Higher quality means larger file sizes. For web use, 80% is usually a good balance between quality and file size.</p></div></details>
                     <details class="faq-item"><summary>What is the maximum file size I can upload?</summary><div class="faq-answer"><p>You can upload images up to 50MB each. The processing happens in your browser, so the actual limit depends on your device's available memory.</p></div></details>
-                    <details class="faq-item"><summary>Does resizing images cause quality loss?</summary><div class="faq-answer"><p>When resizing to smaller dimensions, some quality loss is inevitable. However, our advanced algorithms minimize this loss. Using high quality settings helps.</p></div></details>
-                    <details class="faq-item"><summary>Can I use Resize-san on mobile devices?</summary><div class="faq-answer"><p>Yes! Resize-san is fully responsive and works on all devices including smartphones and tablets.</p></div></details>
-                    <details class="faq-item"><summary>What are the best image sizes for social media?</summary><div class="faq-answer"><p>Instagram posts are typically 1080×1080, Facebook covers are 820×312, YouTube thumbnails are 1280×720. Use our one-click presets!</p></div></details>
-                    <details class="faq-item"><summary>Is my data secure when using Resize-san?</summary><div class="faq-answer"><p>Absolutely! Since all processing happens in your browser, your images are never uploaded anywhere. Your privacy is 100% protected.</p></div></details>
-                    <details class="faq-item"><summary>How do I convert PNG to JPG format?</summary><div class="faq-answer"><p>Select the "Format Converter" tab, upload your PNG image(s), choose "JPG" from the format dropdown, and click Download.</p></div></details>
-                    <details class="faq-item"><summary>Can I compress images without losing quality?</summary><div class="faq-answer"><p>Our compressor uses smart algorithms to reduce file size while maintaining visual quality. Use the "Balanced" setting.</p></div></details>
-                    <details class="faq-item"><summary>Do you offer batch processing?</summary><div class="faq-answer"><p>Yes! You can upload multiple images at once and process them all with the same settings. Download them individually or as a ZIP file.</p></div></details>
-                    <details class="faq-item"><summary>What browsers are supported?</summary><div class="faq-answer"><p>Resize-san works best in modern browsers: Chrome, Firefox, Safari, Edge, and Opera.</p></div></details>
-                    <details class="faq-item"><summary>How do the social media presets work?</summary><div class="faq-answer"><p>Simply click any preset button and then click "Use with Resizer". This will automatically set the correct dimensions.</p></div></details>
+                    <details class="faq-item"><summary>Does resizing images cause quality loss?</summary><div class="faq-answer"><p>When resizing to smaller dimensions, some quality loss is inevitable. However, our advanced algorithms minimize this loss. Using high quality settings and the lock aspect ratio feature helps maintain the best possible quality.</p></div></details>
+                    <details class="faq-item"><summary>Can I use Resize-san on mobile devices?</summary><div class="faq-answer"><p>Yes! Resize-san is fully responsive and works on all devices including smartphones and tablets. The entire experience is mobile-friendly with touch-friendly controls.</p></div></details>
+                    <details class="faq-item"><summary>What are the best image sizes for social media?</summary><div class="faq-answer"><p>Different platforms have different optimal sizes. Instagram posts are typically 1080x1080, Facebook covers are 820x312, YouTube thumbnails are 1280x720, and Twitter headers are 1500x500. Use our one-click presets for perfect sizing!</p></div></details>
+                    <details class="faq-item"><summary>Is my data secure when using Resize-san?</summary><div class="faq-answer"><p>Absolutely! Since all processing happens in your browser, your images are never uploaded anywhere. There's no server storage, no cloud processing, and no data transmission. Your privacy is 100% protected.</p></div></details>
+                    <details class="faq-item"><summary>How do I convert PNG to JPG format?</summary><div class="faq-answer"><p>Select the "Format Converter" tab, upload your PNG image(s), choose "JPG" from the format dropdown, adjust quality if needed, and click Download. It's that simple!</p></div></details>
+                    <details class="faq-item"><summary>Can I compress images without losing quality?</summary><div class="faq-answer"><p>Our compressor uses smart algorithms to reduce file size while maintaining visual quality. Use the "Balanced" setting for the best ratio. For print, use higher quality; for web, balanced works great.</p></div></details>
+                    <details class="faq-item"><summary>Do you offer batch processing?</summary><div class="faq-answer"><p>Yes! You can upload multiple images at once and process them all with the same settings. Download them individually or use the "Download ZIP" button to get all processed images at once.</p></div></details>
+                    <details class="faq-item"><summary>What browsers are supported?</summary><div class="faq-answer"><p>Resize-san works best in modern browsers: Chrome, Firefox, Safari, Edge, and Opera. We use standard browser APIs for maximum compatibility.</p></div></details>
+                    <details class="faq-item"><summary>How do the social media presets work?</summary><div class="faq-answer"><p>Simply click any preset button (Instagram, YouTube, Facebook, etc.) and then click "Use with Resizer". This will automatically set the correct dimensions in the Image Resizer tool for you.</p></div></details>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <div class="footer-bottom"><p>&copy; 2026 Resize-san. All rights reserved.</p></div>
         </div>
     </footer>
+    <script src="../js/app.js" defer></script>
 </body>
 </html>

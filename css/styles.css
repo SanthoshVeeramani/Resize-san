@@ -1443,6 +1443,51 @@ select:focus {
     display: none !important;
 }
 
+/* =====================================================
+   Accessibility - Skip Link
+   ===================================================== */
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    z-index: 10000;
+    transition: top var(--transition-normal);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 1rem;
+    outline: 2px solid var(--accent-secondary);
+    outline-offset: 2px;
+}
+
+/* =====================================================
+   AdSense Ad Containers
+   ===================================================== */
+
+.ad-container {
+    min-height: 90px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.ad-container ins.adsbygoogle {
+    display: block !important;
+}
+
+/* Utility Classes */
 .sr-only {
     position: absolute;
     width: 1px;

@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resize-san Blog - Tips, guides, and insights about image optimization, resizing, and compression.">
-    <meta name="keywords" content="image resizer, image optimization, image compression, social media sizes, image formats">
-    <title>Blog - Resize-san</title>
-    <link rel="canonical" href="https://resize-san.github.io/blog/">
+    <title>Blog - Resize-san | Image Optimization Tips & Guides</title>
+    <meta name="description" content="Resize-san Blog - Tips, guides, and insights about image optimization, resizing, compression, and social media image sizes. Learn how to optimize your images for better performance.">
+    <meta name="keywords" content="image resizer blog, image optimization, image compression, social media sizes, image formats, jpg png webp, image tips">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://resize-san.netlify.app/blog/">
+    <meta property="og:title" content="Resize-san Blog - Image Optimization Tips">
+    <meta property="og:description" content="Tips, guides, and insights about image optimization">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resize-san.netlify.app/blog/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resize-san Blog">
+    <meta name="twitter:description" content="Tips, guides, and insights about image optimization">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,203 +33,78 @@
     </style>
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header" id="header" role="banner">
         <div class="header-container">
-            <a href="../" class="logo">
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">Resize-san</span>
-            </a>
-            <nav class="nav" id="nav">
+            <a href="../" class="logo" aria-label="Resize-san Home"><span class="logo-icon">⚡</span><span class="logo-text">Resize-san</span></a>
+            <nav class="nav" id="nav" role="navigation" aria-label="Main">
                 <ul class="nav-list">
-                    <li><a href="../#tools" class="nav-link">Tools</a></li>
-                    <li><a href="../#social-presets" class="nav-link">Social Media</a></li>
-                    <li><a href="../blog/" class="nav-link">Blog</a></li>
-                    <li><a href="../faq/" class="nav-link">FAQ</a></li>
+                    <li><a href="../#tools">Tools</a></li>
+                    <li><a href="../#social-presets">Social Media</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                    <li><a href="../faq/">FAQ</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
-            </div>
         </div>
     </header>
-
     <main>
         <section class="blog-header">
-            <div class="section-container">
-                <h1>Resize-san Blog</h1>
-                <p style="color: var(--text-secondary); margin-top: 1rem;">Tips, guides, and insights about image optimization</p>
-            </div>
+            <h1>Resize-san Blog</h1>
+            <p style="color: var(--text-secondary); margin-top: 1rem;">Tips, guides, and insights about image optimization</p>
         </section>
-
         <div class="blog-grid">
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%236366f1' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📐%3C/text%3E%3C/svg%3E" alt="Social Media Sizes" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Social Media</span>
-                    <h3>Best Image Sizes for Social Media in 2026</h3>
-                    <p>Complete guide to optimal image dimensions for Instagram, Facebook, YouTube, Twitter, LinkedIn, and more.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>10 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%236366f1' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📐%3C/text%3E%3C/svg%3E" alt="Social Media Sizes Guide" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Social Media</span><h3>Best Image Sizes for Social Media in 2026</h3><p>Complete guide to optimal image dimensions for Instagram, Facebook, YouTube, Twitter, LinkedIn, and more.</p><div class="blog-card-meta"><span>June 2026</span><span>10 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%238b5cf6' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🖼️%3C/text%3E%3C/svg%3E" alt="Image Formats" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Formats</span>
-                    <h3>JPG vs PNG vs WEBP: Which Should You Use?</h3>
-                    <p>Understand the differences between image formats and when to use each one for best results.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>8 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%238b5cf6' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🖼️%3C/text%3E%3C/svg%3E" alt="Image Formats Comparison" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Formats</span><h3>JPG vs PNG vs WEBP: Which Should You Use?</h3><p>Understand the differences between image formats and when to use each one for best results.</p><div class="blog-card-meta"><span>June 2026</span><span>8 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23a78bfa' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📏%3C/text%3E%3C/svg%3E" alt="Resize Images" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Tutorial</span>
-                    <h3>How to Resize Images Without Losing Quality</h3>
-                    <p>Expert tips on resizing images while maintaining maximum quality and visual clarity.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>6 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23a78bfa' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📏%3C/text%3E%3C/svg%3E" alt="Resize Images Without Quality Loss" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Tutorial</span><h3>How to Resize Images Without Losing Quality</h3><p>Expert tips on resizing images while maintaining maximum quality and visual clarity.</p><div class="blog-card-meta"><span>June 2026</span><span>6 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%2310b981' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🗜️%3C/text%3E%3C/svg%3E" alt="Compress Images" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Optimization</span>
-                    <h3>How to Compress Images Effectively</h3>
-                    <p>Learn the best compression techniques to reduce file size without visible quality loss.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%2310b981' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🗜️%3C/text%3E%3C/svg%3E" alt="Compress Images Effectively" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Optimization</span><h3>How to Compress Images Effectively</h3><p>Learn the best compression techniques to reduce file size without visible quality loss.</p><div class="blog-card-meta"><span>June 2026</span><span>7 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23f59e0b' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🚀%3C/text%3E%3C/svg%3E" alt="WEBP Format" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Formats</span>
-                    <h3>Why WEBP Is the Future of Images</h3>
-                    <p>Discover why WEBP is becoming the preferred format for web images and how to convert to it.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>5 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23f59e0b' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🚀%3C/text%3E%3C/svg%3E" alt="WEBP Future" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Formats</span><h3>Why WEBP Is the Future of Images</h3><p>Discover why WEBP is becoming the preferred format for web images and how to convert to it.</p><div class="blog-card-meta"><span>June 2026</span><span>5 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%2363746f' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🔧%3C/text%3E%3C/svg%3E" alt="Online Tools" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Tools</span>
-                    <h3>Best Free Online Image Tools</h3>
-                    <p>Complete list of free browser-based image tools for resizing, converting, and compression.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>9 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%2363746f' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🔧%3C/text%3E%3C/svg%3E" alt="Free Online Image Tools" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Tools</span><h3>Best Free Online Image Tools</h3><p>Complete list of free browser-based image tools for resizing, converting, and compression.</p><div class="blog-card-meta"><span>June 2026</span><span>9 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23ef4444' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📈%3C/text%3E%3C/svg%3E" alt="SEO" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">SEO</span>
-                    <h3>How Image Optimization Improves SEO</h3>
-                    <p>Learn how optimized images can boost your search rankings and page performance.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>8 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23ef4444' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📈%3C/text%3E%3C/svg%3E" alt="Image SEO" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">SEO</span><h3>How Image Optimization Improves SEO</h3><p>Learn how optimized images can boost your search rankings and page performance.</p><div class="blog-card-meta"><span>June 2026</span><span>8 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%230aa749' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📚%3C/text%3E%3C/svg%3E" alt="Compression" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Guide</span>
-                    <h3>Image Compression Explained</h3>
-                    <p>Understanding lossy vs lossless compression and when to use each type.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%230aa749' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E📚%3C/text%3E%3C/svg%3E" alt="Compression Explained" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Guide</span><h3>Image Compression Explained</h3><p>Understanding lossy vs lossless compression and when to use each type.</p><div class="blog-card-meta"><span>June 2026</span><span>7 min read</span></div></div>
             </article>
-
             <article class="blog-card">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%231d4ed8' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='20' x='50%25' y='55%25' text-anchor='middle'%3E📱📱📱%3C/text%3E%3C/svg%3E" alt="Social Media" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Guide</span>
-                    <h3>Ultimate Guide to Social Media Image Sizes</h3>
-                    <p>Complete reference for all social media platform image dimensions in 2026.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>12 min read</span>
-                    </div>
-                </div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%231d4ed8' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='20' x='50%25' y='55%25' text-anchor='middle'%3E📱📱📱%3C/text%3E%3C/svg%3E" alt="Social Media Guide" class="blog-card-image">
+                <div class="blog-card-content"><span class="blog-card-category">Guide</span><h3>Ultimate Guide to Social Media Image Sizes</h3><p>Complete reference for all social media platform image dimensions in 2026.</p><div class="blog-card-meta"><span>June 2026</span><span>12 min read</span></div></div>
             </article>
-
             <article class="blog-card">
                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%237c3aed' width='400' height='200'/%3E%3Ctext fill='white' font-family='sans-serif' font-size='24' x='50%25' y='55%25' text-anchor='middle'%3E🔒%3C/text%3E%3C/svg%3E" alt="Online Security" class="blog-card-image">
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Security</span>
-                    <h3>How to Convert Images Online Securely</h3>
-                    <p>Why browser-based tools are more secure and private than server-side alternatives.</p>
-                    <div class="blog-card-meta">
-                        <span>June 2026</span>
-                        <span>5 min read</span>
-                    </div>
-                </div>
+                <div class="blog-card-content"><span class="blog-card-category">Security</span><h3>How to Convert Images Online Securely</h3><p>Why browser-based tools are more secure and private than server-side alternatives.</p><div class="blog-card-meta"><span>June 2026</span><span>5 min read</span></div></div>
             </article>
         </div>
     </main>
-
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="../" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">Resize-san</span></a>
-                    <p>Free online image tools. 100% private.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Tools</h4>
-                    <ul>
-                        <li><a href="../#tools">Image Resizer</a></li>
-                        <li><a href="../#tools">Format Converter</a></li>
-                        <li><a href="../#tools">Image Compressor</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="../blog/">Blog</a></li>
-                        <li><a href="../faq/">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms</a></li>
-                    </ul>
-                </div>
+                <div class="footer-brand"><a href="../"><span class="logo-icon">⚡</span><span class="logo-text">Resize-san</span></a><p>Free online image tools. 100% private.</p></div>
+                <nav class="footer-links" aria-label="Tools"><h4>Tools</h4><ul><li><a href="../#tools">Image Resizer</a></li><li><a href="../#tools">Format Converter</a></li><li><a href="../#tools">Image Compressor</a></li></ul></nav>
+                <nav class="footer-links" aria-label="Resources"><h4>Resources</h4><ul><li><a href="../blog/">Blog</a></li><li><a href="../faq/">FAQ</a></li></ul></nav>
+                <nav class="footer-links" aria-label="Legal"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms</a></li></ul></nav>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Resize-san. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Resize-san. All rights reserved.</p></div>
         </div>
     </footer>
-
-    <script src="../js/app.js"></script>
+    <script src="../js/app.js" defer></script>
 </body>
 </html>
