@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Resize-san | Free Image Tools</title>
+    <meta name="description" content="About Resize-san - Learn about our mission to provide free, private, browser-based image tools. Resize, convert, and compress images without uploading to any server.">
+    <meta name="keywords" content="about us, image tools, free image resizer, privacy first, browser based">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://resize-san.netlify.app/about.html">
+    <meta property="og:title" content="About Us - Resize-san">
+    <meta property="og:description" content="Free, private image tools that run entirely in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resize-san.netlify.app/about.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About Us - Resize-san">
+    <meta name="twitter:description" content="Free, private image tools that run entirely in your browser.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .about-container { max-width: 800px; margin: 0 auto; padding: 6rem 1.5rem 4rem; }
+        .about-hero { text-align: center; margin-bottom: 3rem; }
+        .about-hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .about-hero p { font-size: 1.25rem; color: var(--text-secondary); }
+        .about-section { margin: 2rem 0; }
+        .about-section h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+        .about-section p { color: var(--text-secondary); line-height: 1.7; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .feature-card { background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+        .feature-card h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
+        .feature-card p { font-size: 0.9375rem; color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <header class="header" id="header" role="banner">
+        <div class="header-container">
+            <a href="./" class="logo" aria-label="Resize-san Home"><span class="logo-icon">⚡</span><span class="logo-text">Resize-san</span></a>
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="./#tools">Tools</a></li>
+                    <li><a href="./#social-presets">Social Media</a></li>
+                    <li><a href="./blog/">Blog</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content" role="main">
+        <div class="about-container">
+            <div class="about-hero">
+                <h1>About Resize-san</h1>
+                <p>Free, private image tools that work entirely in your browser.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Our Mission</h2>
+                <p>Resize-san was created with a simple mission: to make image processing accessible to everyone without compromising privacy. We believe that image editing tools should be free, easy to use, and most importantly &mdash; respect your data.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Why Resize-san?</h2>
+                <p>Most online image tools require you to upload your images to their servers. This creates privacy concerns and adds upload/download time. We built Resize-san differently &mdash; all processing happens locally in your browser using the Canvas API.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🔒 100% Private</h3>
+                    <p>Your images never leave your device. Everything is processed locally.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Lightning Fast</h3>
+                    <p>No upload or download wait times. Process images instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💰 Completely Free</h3>
+                    <p>No hidden fees, subscriptions, or premium tiers. Always free.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Works Everywhere</h3>
+                    <p>Works on any device with a modern browser. No app installation needed.</p>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>What We Offer</h2>
+                <p>Resize-san provides a suite of free image tools:</p>
+                <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 1.5rem;">
+                    <li><strong>Image Resizer</strong> - Resize by width, height, or percentage with aspect ratio lock</li>
+                    <li><strong>Format Converter</strong> - Convert between JPG, PNG, and WEBP formats</li>
+                    <li><strong>Image Compressor</strong> - Compress images with quality control</li>
+                    <li><strong>Social Media Presets</strong> - One-click presets for all major platforms</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h2>Technology</h2>
+                <p>We're proud to be a static website with no backend infrastructure. Resize-san uses:</p>
+                <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 1.5rem;">
+                    <li>HTML5 and CSS3</li>
+                    <li>Vanilla JavaScript</li>
+                    <li>Canvas API for image processing</li>
+                    <li>JSZip for batch downloads</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Visit our <a href="contact.html">Contact page</a> to reach out.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="./"><span class="logo-icon">⚡</span><span class="logo-text">Resize-san</span></a><p>Free online image tools. 100% private.</p></div>
+                <nav class="footer-links" aria-label="Tools"><h4>Tools</h4><ul><li><a href="./#tools">Image Resizer</a></li><li><a href="./#tools">Format Converter</a></li><li><a href="./#tools">Image Compressor</a></li></ul></nav>
+                <nav class="footer-links" aria-label="Resources"><h4>Resources</h4><ul><li><a href="./blog/">Blog</a></li><li><a href="./faq/">FAQ</a></li><li><a href="./privacy.html">Privacy Policy</a></li><li><a href="./about.html">About Us</a></li></ul></nav>
+                <nav class="footer-links" aria-label="Legal"><h4>Legal</h4><ul><li><a href="./terms.html">Terms of Service</a></li><li><a href="./contact.html">Contact Us</a></li></ul></nav>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Resize-san. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
